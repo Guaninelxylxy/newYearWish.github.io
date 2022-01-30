@@ -51,13 +51,13 @@ var num=1;
 var NUM=4;
 function preload() {
   theShader = new p5.Shader(this.renderer, vertShader, fragShader);
-  
+   myFont=loadFont("./../HYQiHei-55S.otf");
   
 }
 
 function setup() {
   pixelDensity(1);
-  myFont=loadFont("./../HYQiHei-55S.otf");
+ 
   let canvas = createCanvas(
     min(windowWidth, windowHeight), 
     min(windowWidth, windowHeight), 
